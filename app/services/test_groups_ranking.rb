@@ -15,7 +15,7 @@ class TestGroupsRanking
       LEFT JOIN test_group_weights
               ON test_group_weights.group_name = test_tasks.group_name
       GROUP BY test_tasks.group_name, test_group_weights.value
-      ORDER BY rating DESC, name DESC"
+      ORDER BY rating DESC, name ASC"
     end
 
     # def sql_base
